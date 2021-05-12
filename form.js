@@ -3,20 +3,16 @@ const username=document.querySelector('#username')
 const displayName=document.querySelector('p')
 
 const pattern= /^[a-zA-Z0-9]{6,12}$/
+
 form.addEventListener('submit', (e)=>{
 
     e.preventDefault();
-    //console.log(username.value)
-    // or we can use
     const UserName=form.username.value
     if (UserName.match(pattern)) {
-        console.log('passed') 
+        displayName.textContent='User name is valid'
     } else {
-        console.log('failed')
+        displayName.textContent='User Name must be between 6-12 characters long'
     }
-
-
-    displayName.innerText=form.username.value
-    
+   // displayName.innerText=form.username.value 
 
 })
