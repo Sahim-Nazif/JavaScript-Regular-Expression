@@ -15,4 +15,11 @@ form {
 input{
     margin:20px;
     padding:5px;
+ 
+}
+.success{
+    border:2px solid lawngreen;
+}
+.error{
+    border:2px solid red;
 }
